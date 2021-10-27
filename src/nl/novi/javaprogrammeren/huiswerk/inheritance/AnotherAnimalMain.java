@@ -18,6 +18,7 @@ public class AnotherAnimalMain {
     herkomst op. Ook willen we het aantal strepen weten.
 
     Van een Hond slaan we naam, naam van het baasje, favoriete voedselmerk, geslacht en soort op.
+
     Van een Kat slaan we de naam, naam van het baasje, favoriete voedsel merk, geslacht en soort op. Ook willen we weten
     of het een binnen of buitenkat is.
 
@@ -47,6 +48,16 @@ public class AnotherAnimalMain {
      */
     public static void main(String[] args) {
 
+        Cat cat = new Cat();
+        cat.sound();
+        cat.sleep();
+        cat.move();
+
+        Tiger tiger = new Tiger();
+
+        tiger.sound();
+        tiger.sleep();
+        tiger.move();
     }
 
 }

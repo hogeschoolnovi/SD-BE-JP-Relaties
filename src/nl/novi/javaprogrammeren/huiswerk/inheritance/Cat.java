@@ -1,4 +1,4 @@
-package nl.novi.javaprogrammeren.lesopdrachten.inheritance.one;
+package nl.novi.javaprogrammeren.huiswerk.inheritance;
 
 /**
  * Cat extends Pet only, want Pet Extends Animal! En zo kom je dus uiteindelijk wel bij Animal uit.
@@ -9,7 +9,7 @@ public class Cat extends Pet {
 
     @Override
     public void sound() {
-        System.out.println("Mewo");
+        System.out.println("Meow");
     }
 
     public boolean isOutsideCat() {
