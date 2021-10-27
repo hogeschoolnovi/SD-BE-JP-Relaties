@@ -25,5 +25,28 @@ public class MainCar {
      */
     public static void main(String[] args) {
 
+        Car notAFerrari = new Car("12-12-12", "Nissan", "Sunny",10);
+        Car daf = new Car("11-11-11", "DAF", "daf", 1111212);
+
+        CarOwner carOwner = new CarOwner("Joost Autobezitter", 22);
+        CarOwner underagePerson = new CarOwner("Pieter Piet", 12);
+
+        CarDealer carDealer = new CarDealer("Autoverkoper Oude Troep");
+
+        carDealer.addCar(notAFerrari);
+        carDealer.addCar(daf);
+
+        carDealer.transferCarToOwner(notAFerrari, carOwner);
+        carDealer.transferCarToOwner(daf, underagePerson);
+
+        System.out.println("Amount of cars in dealer: " + carDealer.getCars().size());
+        System.out.println("Amount of cars carOwner: " + carOwner.getCars().size());
+        System.out.println("Amount of cars underagePerson: " + underagePerson.getCars().size());
+        System.out.println("Owner Nissan: " + notAFerrari.getOwner().getFullName());
+
+        //THROWS NULL POINTER EXCEPTION
+        // Dat verwachten we ook, want DAF heeft geen eigenaar, dus Owner is NULL!
+        System.out.println("Owner Daf:" + daf.getOwner().getFullName());
+
     }
 }
