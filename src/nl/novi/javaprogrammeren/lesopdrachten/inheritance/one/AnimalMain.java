@@ -15,6 +15,7 @@ public class AnimalMain {
     herkomst op. Ook willen we het aantal strepen weten.
 
     Van een Hond slaan we naam, naam van het baasje, favoriete voedselmerk, geslacht en soort op.
+
     Van een Kat slaan we de naam, naam van het baasje, favoriete voedsel merk, geslacht en soort op. Ook willen we weten
     of het een binnen of buitenkat is.
 

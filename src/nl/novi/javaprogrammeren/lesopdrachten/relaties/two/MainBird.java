@@ -24,7 +24,21 @@ public class MainBird {
      */
 
     public static void main(String[] args) {
+        BirdOwner birdOwner = new BirdOwner("Nova", "female");
 
+        for (int i = 0; i < 10; i++) {
+            birdOwner.addBird(new Bird("name" + i, "canary", i + "A", "male"));
+        }
+
+        for (int i = 10; i < 20; i++) {
+            birdOwner.addBird(new Bird("name" + i, "canary", i + "A", "female"));
+        }
+
+        System.out.println(birdOwner);
+
+        birdOwner.changeListToFiveFemalesAndFiveMales();
+        System.out.println("After random selection");
+        System.out.println(birdOwner);
     }
 
 
